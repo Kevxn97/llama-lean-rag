@@ -7,6 +7,7 @@ Repo working notes for Codex.
 - Initialize DB (drops/recreates tables): `python main.py init-db`
 - Ingest PDFs from a directory: `python main.py ingest <path> [-f|--force]`
 - Start chat loop: `python main.py chat`
+- Run unit tests: `python3 -m unittest discover -s tests -p "test_*.py"`
 
 ## Environment
 Required for normal operation:
@@ -27,4 +28,4 @@ Optional overrides:
 - Ingest expects PDFs in the provided directory (case-insensitive `.pdf`).
 
 ## TODO
-- Add test/lint commands once they exist in the repo.
+- Add lint/typecheck commands once they exist in the repo.
